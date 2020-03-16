@@ -1,0 +1,32 @@
+1) What is the purpose of the Hello World Program?
+   To do a first program and use basic text calls
+
+2) Name the four parts of a function.
+   Data Type (int), name(main), brackets, body
+
+3) Name a function that must appear in every c++ program
+   Main()
+
+4) In the "Hello World" program, what is the purpose of the "return 0;" line?
+   To tell the compiler that the function has completed succesfully
+
+5) What is the purpose of hte compiler?
+   To convert source code into machine code
+
+6) What is the purpose of the #include directive?
+   So the program references the header file when compiling
+
+7) What does the ".h" suffix signify?
+   A header file
+
+8) What does the linker do for your program?
+   Merges the C++ standard library and the machine code?
+
+9) What is the diffence between a source file and an object file?
+   A souce file is in c++ code and an object file is in machine code
+
+10) What is an IDE and what does it do for you?
+    It is a program that includes a compiler and a linker all in one
+
+11) Why is neccesary to practise?
+    To keep your skills honed
