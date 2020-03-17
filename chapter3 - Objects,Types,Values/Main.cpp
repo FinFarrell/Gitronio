@@ -10,6 +10,9 @@ int main()
 	cin >> first_name;
 	cout << "Dear " << first_name << ", " << "\n ";
 
+	// step 2 - filler text
+	cout << "	Hello! I have missed you tons, how are you doing? I havent spoken too you in ages and I though we needed to catch up a bit. I am doing just fine.";
+
 	return 0;
 }
 
