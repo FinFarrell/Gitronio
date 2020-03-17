@@ -13,6 +13,13 @@ int main()
 	// step 2 - filler text
 	cout << "	Hello! I have missed you tons, how are you doing? I havent spoken too you in ages and I though we needed to catch up a bit. I am doing just fine.";
 
+	// step 3 - user inputs other friends name
+	string friend_name;
+	cout << "\n" << "Enter name of friend";
+	cin >> friend_name;
+	cout << "\n" << "Have you seen " << friend_name << "recently? I want to see how his new house is going";
+
+
 	return 0;
 }
 
