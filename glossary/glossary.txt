@@ -1,0 +1,27 @@
+
+Chapter 2 - Hello World
+// - comments out a line of code from where the two slashes are written ( .... //this code displays... )
+<< - seperates different terms in a cout or cin function
+C++ - an object oriented programming language based on C
+comment - a note to the programmer or reader that won't be read as code by the compiler
+compile-time-error - an error that the compiler picks up such as a syntax error like a missing semicolon
+cout - displays basic text ( cout<<"hello"<<name; )
+executable - a file that has combined all of the files and can be run without the source code or an IDE
+function - a set action that can be altered using an input. Uses a data type to specify what is going to returned ( void func(name){cout<<name;} )
+header - a file that sets out variables and functions that can be called upon using the cpp file
+IDE - a program such as visual studio that you can do the entire workflow through. They also can include very good debugging tools among other helpful tools
+#include - lets you reference different files and libaries. You use "<>" for libraries and "" for files f ( #include "std_lib_facilities.h" )
+library - a collection of funtions that help when coding
+linker - joins the compiled object files to the libraries used
+main() - the main body of code. Always gets called first by the compiler
+object code - what the compiler turns source code into. Gets read by the machine
+output - what the user sees/hears
+program - the final product [a .exe file] that can be run by the user
+source code - code written in a programming language that the programmer writes
+statement - an order issed to the program by the programmer [eg. an "if" statement]
+
+Chapter 3 - Objects, Types and Values
+
+
+
+
