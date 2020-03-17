@@ -17,7 +17,28 @@ int main()
 	string friend_name;
 	cout << "\n" << "Enter name of friend";
 	cin >> friend_name;
-	cout << "\n" << "Have you seen " << friend_name << "recently? I want to see how his new house is going";
+	cout << "\n" << "Have you seen " << friend_name << " recently? I want to see how his new house is going";
+
+	//step 4 - friend sex
+	char friend_sex = 0;
+	cout << "\n" << "What is you friends sex? m/f";
+	cin >> friend_sex;
+
+	//check which gender friend is
+	if (friend_sex == 'm')
+	{
+		cout << "\n" << "If you see " << friend_name << ", please ask him to call me";
+	}
+	else if (friend_sex == 'f')
+	{
+		cout << "\n" << "If you see " << friend_name << ", please ask her to call me";
+	}
+	else
+	{
+		cout << "\n" << "You disobeyed meeeeee, HOW DARE YOUUUUU";
+	}
+
+		
 
 
 	return 0;
