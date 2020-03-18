@@ -38,6 +38,19 @@ int main()
 		cout << "\n" << "You disobeyed meeeeee, HOW DARE YOUUUUU";
 	}
 
+	// step 5 - user age
+	int age;
+	cout << "\n" << "What is the person's age?";
+	cin >> age;
+	if (age > 110 || age < 0)
+	{
+		simple_error("You're kidding!");
+	}
+	else
+	{
+		cout << "\n" << "I hear that you just had a birthday and you're " << age << " years old!";
+	}
+
 		
 
 
