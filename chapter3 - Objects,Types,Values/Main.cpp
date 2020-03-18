@@ -17,7 +17,7 @@ int main()
 	string friend_name;
 	cout << "\n" << "Enter name of friend";
 	cin >> friend_name;
-	cout << "\n" << "Have you seen " << friend_name << " recently? I want to see how his new house is going";
+	cout << "\n" << "Have you seen " << friend_name << " recently? I want to see how their new house is going";
 
 	//step 4 - friend sex
 	char friend_sex = 0;
@@ -50,6 +50,22 @@ int main()
 	{
 		cout << "\n" << "I hear that you just had a birthday and you're " << age << " years old!";
 	}
+
+	// step 6 - age comment
+	if (age < 12)
+	{
+		cout << "\n" << "Next year you will be " << age + 1 << " !";
+	}
+	else if (age == 17)
+	{
+		cout << "\n" << "You can vote next year!";
+	}
+	else if (age > 70)
+	{
+		cout << "\n" << "Hope you are enjoying retirement!";
+	}
+
+	// all working!
 
 		
 
