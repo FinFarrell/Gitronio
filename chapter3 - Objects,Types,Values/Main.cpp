@@ -69,7 +69,7 @@ int main()
 
 	// step 7 - finishing off!
 	cout << "\n" << "Your's Sincerely," << "\n\n\n" << "Finley";
-	// final test!
+	// final test! All working!
 
 		
 
