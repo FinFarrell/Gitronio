@@ -1,0 +1,3 @@
+﻿  Main.cpp
+E:\programming\c++\bookCode\chapter3 - Objects,Types,Values\exercises\exercises\Main.cpp(8,26): warning C4305:  'initializing': truncation from 'double' to 'float'
+  exercises.vcxproj -> E:\programming\c++\bookCode\chapter3 - Objects,Types,Values\exercises\exercises\Debug\exercises.exe
