@@ -6,8 +6,9 @@ int main()
 
 	// Step 1 - while loop reading 2 ints and writing them
 	// Step 2 and 3 - writing out the smaller value then the larger one, and checking if they are equal
-	int a;
-	int b;
+	// Steo 4 - changing all to doubles
+	double a;
+	double b;
 	cout << "enter 2 integers, then they will be printed, when you wish to exit, enter |" << "\n";
 	while (cin >> a, cin>>b)
 	{
