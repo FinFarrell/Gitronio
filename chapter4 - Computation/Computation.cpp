@@ -10,11 +10,13 @@ int main()
 	// Step 5 - changed checks for similar nubmers and equal numbers
 	// Step 6 - overhaul to make one double be added and that being checked for smallest and largest
 	// step 7 and 8 - add units and illegalify bad ones
+	// step 9 10 and 11 keeping track of the numbers entered in a vector, having a little summary at the end
 
 	 vector<double> total;
 	double a;
-	double sum;
+	double sum = 0;
 	string units;
+	//string listoo;
 	double smallest = 10000000;
 	double largest = 0;
 	bool a_larger;
@@ -35,6 +37,10 @@ int main()
 			a *= 12;
 			a *= 2.54;
 		}
+		else if (units == "cm")
+		{
+			cout << "poop" << "\n";
+		}
 		else
 		{
 			cout << "ILLEGAL UNIT BAD" << "\n";
@@ -43,12 +49,12 @@ int main()
 		// basic logic see if the number is bigger or smaller
 		if (a > largest)
 		{
-			cout << "largest so far, bigger than " << largest << "\n";
+			cout << "largest so far, bigger than " << largest << "cm" <<"\n";
 			largest = a;
 		}
 		else if (a < smallest)
 		{
-			cout << "smallest so far, smaller than " << smallest << "\n";
+			cout << "smallest so far, smaller than " << smallest << "cm" << "\n";
 			smallest = a;
 		}
 		else
@@ -58,15 +64,24 @@ int main()
 
 		total.push_back(a);
 
-		for (int i; total.size(); i++)
-		{
-			sum += total[i];
-		}
 
 	}
 
+
+	int size = total.size() - 1;
+	for (int i = 0; i<size; i++)
+	{
+		sum += total[i];
+	}
+
+	sort(total);
+
+	
+	
+
+
 	cout << "the largest value you entered was the equivalent of " << largest / 100 << "m" << ", the smallest was, in metres " << smallest / 100 << "m" << ", you entered " << total.size() ;
-	cout << " values and the total of all of these is " << sum << "\n";
+	cout << " values and the total of all of these is " << sum/100 << " m" << ". The total list of numbers you entered, in cm is " << "list" <<"\n";
 
 
 
