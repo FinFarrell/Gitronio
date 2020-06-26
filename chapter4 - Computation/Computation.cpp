@@ -81,8 +81,9 @@ int main()
 
 
 	cout << "the largest value you entered was the equivalent of " << largest / 100 << "m" << ", the smallest was, in metres " << smallest / 100 << "m" << ", you entered " << total.size() ;
-	cout << " values and the total of all of these is " << sum/100 << " m" << ". The total list of numbers you entered, in cm is " << "list" <<"\n";
+	cout << " values and the total of all of these is " << sum/100 << " m" << ". The total list of numbers you entered, in cm is " <<"\n";
 
+	list_print(total, total.size());
 
 
 

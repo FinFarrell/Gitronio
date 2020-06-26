@@ -265,4 +265,13 @@ Iterator<C> find_if(C& c, Pred p)
 	return std::find_if(c.begin(), c.end(), p);
 }
 
+// extra function to make list
+void list_print( vector<double> fin,  int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		cout << fin[i] << "\n";
+	}
+}
+
 #endif //H112
