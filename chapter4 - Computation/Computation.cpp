@@ -11,7 +11,9 @@ int main()
 	// Step 6 - overhaul to make one double be added and that being checked for smallest and largest
 	// step 7 and 8 - add units and illegalify bad ones
 
+	 vector<double> total;
 	double a;
+	double sum;
 	string units;
 	double smallest = 10000000;
 	double largest = 0;
@@ -54,7 +56,17 @@ int main()
 			cout << "nothing special about this number" << "\n";
 		}
 
+		total.push_back(a);
+
+		for (int i; total.size(); i++)
+		{
+			sum += total[i];
+		}
+
 	}
+
+	cout << "the largest value you entered was the equivalent of " << largest / 100 << "m" << ", the smallest was, in metres " << smallest / 100 << "m" << ", you entered " << total.size() ;
+	cout << " values and the total of all of these is " << sum << "\n";
 
 
 
