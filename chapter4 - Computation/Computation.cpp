@@ -9,13 +9,35 @@ int main()
 	// Steo 4 - changing all to doubles
 	// Step 5 - changed checks for similar nubmers and equal numbers
 	// Step 6 - overhaul to make one double be added and that being checked for smallest and largest
+	// step 7 and 8 - add units and illegalify bad ones
+
 	double a;
+	string units;
 	double smallest = 10000000;
 	double largest = 0;
 	bool a_larger;
-	cout << "enter 2 integers, then they will be printed, when you wish to exit, enter |" << "\n";
-	while (cin >> a)
+	cout << "enter a number, followed by the unit that is in, being in cm, m, ft, in. To exit enter |" << "\n";
+	while (cin >> a, cin >> units)
 	{
+		// converts numbers to right units
+		if (units == "m")
+		{
+			a *= 100;
+		}
+		else if (units == "in")
+		{
+			a *= 2.54;
+		}
+		else if (units == "ft")
+		{
+			a *= 12;
+			a *= 2.54;
+		}
+		else
+		{
+			cout << "ILLEGAL UNIT BAD" << "\n";
+		}
+
 		// basic logic see if the number is bigger or smaller
 		if (a > largest)
 		{
@@ -29,10 +51,8 @@ int main()
 		}
 		else
 		{
-			cout << "nothing special about this number";
+			cout << "nothing special about this number" << "\n";
 		}
-		
-
 
 	}
 
