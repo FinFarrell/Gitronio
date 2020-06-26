@@ -7,7 +7,7 @@ int main()
 	// Step 1 - while loop reading 2 ints and writing them
 	// Step 2 and 3 - writing out the smaller value then the larger one, and checking if they are equal
 	// Steo 4 - changing all to doubles
-	// Step 5 - 
+	// Step 5 - changed checks for similar nubmers and equal numbers
 	double a;
 	double b;
 	bool a_larger;
@@ -25,17 +25,17 @@ int main()
 			cout << b << "\n" << a << "\n";
 			a_larger = true;
 		}
-		else
-		{
-			cout << "Numbers are equal" << "\n";
-			a_larger = false;
-		}
 
 		// checking if they are similar
-		if (a_larger && a - b <= 1)
+		if (a_larger && a - b <= 1.0 && a-b != 0 || !a_larger && b - a <= 1.0 && b-a != 0)
 		{
 			cout << "SIMILAR NUMBERS" << "\n";
 		}
+		else if (a - b == 0)
+		{
+			cout << "EQUAL" << "\n";
+		}
+
 	}
 
 
