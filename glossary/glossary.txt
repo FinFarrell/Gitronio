@@ -21,7 +21,24 @@ source code - code written in a programming language that the programmer writes
 statement - an order issed to the program by the programmer [eg. an "if" statement]
 
 Chapter 3 - Objects, Types and Values
-
+assignment - changing an already set variable using the syntax '='
+cin - the user inputs data that is stored in a variable ( cin << number ) in this example the data that the user entered is stored in the variable number
+concatenation - where two strings are merged, they get added onto the end of each other
+conversion - where one data type gets converted into another data type [e.g an int into a float], these can be dangerous as they can narrow, losing data [e.g from a float to an int]
+decaration -  setting a name for an object
+decrement - subtracting from a number numberous times (i--, i-=2, i = i-2)
+definition - declaration that sets aside memory for an object, saving space for that object in the memory
+increment - adding to a number numberous times (i++, i+=2, i = i+2)
+initialisation - calling a variable the first time, this must include the data type that it is, using the syntax '='
+name - what an object is calle, these should be descriptive but not overly compilicated [e.g num_of_apples]
+narrowing - when a bigger data type os converted into a smaller one [ a double into an int, you lose the decimal places], this should be avoided if not essential
+object - a place to store data
+operation - a single, simple proccessing of data [like a sum]
+operator - built in like similar to functions [+ or = or &&]
+type - the size and type of data an object it [int or char]
+type safety - you cant use some operators across some data types [you cant use - from ints to strings]
+value - a literal that cant be changed [1]
+variable - a named, initialised object that can store data
 
 
 
