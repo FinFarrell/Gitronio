@@ -9,11 +9,10 @@ int main()
 	// 5 - add logic so that if numbers are within 1 then they are almost equal
 	// 6 - change loop so it is continuous
 	bool running = true;
-	double topNum;
+	double topNum{};
 
 	while (running){
 		double currentNum;
-		topNum = 0;
 
 		cout << "enter a number" << "\n";
 		cin >> currentNum;
@@ -26,7 +25,7 @@ int main()
 			cout << "the number " << currentNum << " is equal to " << topNum << "\n";
 		}
 		else {
-			cout << "the highest current number,  " << topNum << " , was higher than " << currentNum << "\n";
+			cout << "the highest current number, " << topNum << ", was higher than " << currentNum << "\n";
 		}
 
 		string quit;
