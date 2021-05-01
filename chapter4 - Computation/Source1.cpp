@@ -9,29 +9,28 @@ int main()
 	// 5 - add logic so that if numbers are within 1 then they are almost equal
 	// 6 - change loop so it is continuous
 	bool running = true;
+	double topNum;
 
 	while (running){
-		double num1;
-		double num2;
+		double currentNum;
+		topNum = 0;
 
-		cout << "enter two numbers" << "\n";
-		cin >> num1;
-		cin >> num2;
+		cout << "enter a number" << "\n";
+		cin >> currentNum;
 
-		if (num1 - num2 < 1 || num2 - num1 < 1) {
-			cout << "the larger number is  " << num2 << " and the smaller number is " << num1 <<  " but they are almost equal" << "\n";
+		if (currentNum > topNum) {
+			cout << "the larger number is  " << currentNum << " the previous largest number was " << topNum << "\n";
+			topNum = currentNum;
 		}
-		else if (num1 - num2 < 0) {
-			cout << "the larger number is  " << num2 << " and the smaller number is " << num1 << "\n";
-		}
-		else if (num1 == num2) {
-			cout << "the number " << num1 << " is equal to " << num2 << "\n";
+		else if (currentNum == topNum) {
+			cout << "the number " << currentNum << " is equal to " << topNum << "\n";
 		}
 		else {
-			cout << "the larger number is  " << num1 << " and the smaller number is " << num2 << "\n";
+			cout << "the highest current number,  " << topNum << " , was higher than " << currentNum << "\n";
 		}
 
 		string quit;
+		cout << "press | to quit " << "\n";
 		cin >> quit;
 		if (quit == "|") {
 			running = false;
