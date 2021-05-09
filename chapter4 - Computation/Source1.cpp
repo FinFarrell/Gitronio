@@ -10,8 +10,12 @@ int main()
 	// 6 - change loop so it is continuous
 	// 7 - add units (m, ft, in)
 	// 8 - reject illegal units such as gallons
+	// 9 - keep sum of values and print it all out when the program ends
+
 	bool running = true;
 	double topNum{};
+	double smallNum{};
+	vector <double> numList = {};
 
 	while (running){
 		double currentNum;
@@ -38,6 +42,8 @@ int main()
 			cout << "please enter a correct unt (cm, ft, in or m)";
 		}
 
+		numList.push_back(currentNum);
+
 		if (currentNum > topNum) {
 			cout << "the larger number is  " << currentNum << " the previous largest number was " << topNum << "\n";
 			topNum = currentNum;
@@ -45,14 +51,27 @@ int main()
 		else if (currentNum == topNum) {
 			cout << "the number " << currentNum << " is equal to " << topNum << "\n";
 		}
+		else if (currentNum < smallNum) {
+			smallNum = currentNum;
+		}
 		else {
-			cout << "the highest current number, " << topNum << ", was higher than " << currentNum << "\n";
+			cout << "the number you entered, " << currentNum << ", is smaller than " << topNum << "but bigger than "<< smallNum <<"\n";
 		}
 
 		string quit;
 		cout << "press | to quit " << "\n";
 		cin >> quit;
 		if (quit == "|") {
+
+			double addedNums{};
+			for (int i = 0; i < size(numList); ++i) {
+				addedNums += numList[i];
+			}
+
+			cout << "the highest number you entered was " << topNum << "\n";
+			cout << "the smallest number you entered was " << smallNum << "\n";
+			cout << "you entered " << size(numList) << "numbers" << "\n";
+			cout << "the total of your added numbers in cm was " << addedNums << "\n";
 			running = false;
 		}
 
