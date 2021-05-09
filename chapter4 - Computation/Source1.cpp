@@ -9,6 +9,7 @@ int main()
 	// 5 - add logic so that if numbers are within 1 then they are almost equal
 	// 6 - change loop so it is continuous
 	// 7 - add units (m, ft, in)
+	// 8 - reject illegal units such as gallons
 	bool running = true;
 	double topNum{};
 
@@ -29,6 +30,12 @@ int main()
 		}
 		else if (unit == "ft") {
 			currentNum *= 30.48;
+		}
+		else if (unit == "cm") {
+			
+		}
+		else {
+			cout << "please enter a correct unt (cm, ft, in or m)";
 		}
 
 		if (currentNum > topNum) {
