@@ -8,14 +8,28 @@ int main()
 	// 4 - change to doubles
 	// 5 - add logic so that if numbers are within 1 then they are almost equal
 	// 6 - change loop so it is continuous
+	// 7 - add units (m, ft, in)
 	bool running = true;
 	double topNum{};
 
 	while (running){
 		double currentNum;
+		string unit;
 
 		cout << "enter a number" << "\n";
 		cin >> currentNum;
+		cout << "enter the unit" << "\n";
+		cin >> unit;
+
+		if (unit == "m") {
+			currentNum *= 100;
+		}
+		else if (unit == "in") {
+			currentNum *= 2.54;
+		}
+		else if (unit == "ft") {
+			currentNum *= 30.48;
+		}
 
 		if (currentNum > topNum) {
 			cout << "the larger number is  " << currentNum << " the previous largest number was " << topNum << "\n";
